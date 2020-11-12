@@ -9,6 +9,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif;
+  color: #1B1818;
 }
 
 .container {
@@ -19,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .circle {
-  background-color: #000;
+  background-color: #1B1818;
   width: 25px;
   height: 25px;
   display: inline-block;  
@@ -40,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 .group {
   display: flex;
   padding: 30px 0 40px 30px;
-  border-left: 1px solid #000;
+  border-left: 1px solid #1B1818;
 }
 
 /***************** Header - Start *****************/
@@ -109,6 +110,10 @@ nav {
 
 #intro .circle {  
   background-color: #fff;
+}
+
+#intro h2, #intro h3 {
+  color: #fff;
 }
 
 #intro .section-title {
@@ -189,7 +194,55 @@ nav {
 /***************** About Me - End *****************/
 
 /***************** Contact Me - Start *****************/
-#contact-me {
-  /* border: 1px solid darkcyan; */
+#contact-me .group {
+  padding: 60px 0;
+}
+.contact {
+  flex: 1;
+  align-self: baseline;  
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+}
+.contact-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.contact a {
+  color: #4D4E4D;
+  font-weight: bold;
+  text-decoration: none;  
+}
+
+.contact a:hover {
+  color: #DB3E38;  
+  cursor: pointer;
+}
+
+.contact p {
+  text-align: center;
+  padding-top: 7px;
 }
 /***************** Contact Me - End *****************/
+
+/***************** Footer - Start *****************/
+footer {
+  background-color: #000;
+  color: #fff;
+}
+footer .group {
+  border-left: 1px solid #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #DB3E38;
+}
+/***************** Footer - End *****************/
