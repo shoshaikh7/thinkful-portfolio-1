@@ -87,6 +87,7 @@ nav {
   display: inline-block;  
   padding: 15px 33px;
   text-decoration: none;  
+  color: #fff;
 }
 
 .nav-links:visited {
