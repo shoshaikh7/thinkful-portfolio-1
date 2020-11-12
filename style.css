@@ -2,23 +2,45 @@
 * {
   box-sizing: border-box;
 }
+
 body {
-  /* background-color: #181A1B; */
-  
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 15px;  
+  padding: 30px;
+  position: relative;
 }
 
 .circle {
-  background-color: #fff;
+  background-color: #000;
   width: 25px;
   height: 25px;
   display: inline-block;  
   border-radius: 50%;
+  position: absolute;
+  top: 61px;
+  left: 17px;
+}
+
+.section-title {
+  font-size: 64px;
+  margin: 0;
+  padding-left: 40px;    
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.group {
+  display: flex;
+  padding: 30px 0 40px 30px;
+  border-left: 1px solid #000;
 }
 
 /***************** Header - Start *****************/
@@ -85,30 +107,17 @@ nav {
   height: 500px; 
 }
 
-#intro .container {
-  position: relative;
-  padding: 30px;
-  height: 100%;
+#intro .circle {  
+  background-color: #fff;
 }
 
-#intro h2 {
-  margin: 0;
-  padding-left: 40px;
-  font-size: 80px;  
-  text-transform: uppercase;
-  display: inline-block;
-}
-
-#intro .circle {
-  position: absolute;
-  top: 61px;
-  left: 17px;
+#intro .section-title {
+  font-size: 72px;
 }
 
 #intro-content {
   border-left: 1px solid #fff;
   padding: 30px 0 0 40px;
-  height: 100%;
 }
 
 #intro-content p {
@@ -125,20 +134,58 @@ nav {
 
 #down-arrow {
   font-size: 80px;
+  font-family: 'Roboto Slab', serif;
 }
 
 /***************** Intro - End *****************/
 
 /***************** My Work - Start *****************/
-#my-work {
-  /* border: 1px solid olivedrab; */
+.project {
+  flex: 1;
+  padding: 0 10px;
 }
+
+.project:hover > .project-name{
+  color: #DB3E38;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.project-title {
+  color: #4D4E4D;
+}
+
+.project-description {
+  color: #B4B5B3;
+}
+
+.project-link {
+  color: #4D4E4D;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  color: #DB3E38;
+}
+
 /***************** My Work - End *****************/
 
 /***************** About Me - Start *****************/
 #about-me {
   /* border: 1px solid orange; */
 }
+.my-photo img{
+  border-radius: 50%;
+}
+
+.my-story {
+  margin-left: 50px;
+}
+
 /***************** About Me - End *****************/
 
 /***************** Contact Me - Start *****************/
